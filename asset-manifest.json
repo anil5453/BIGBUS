@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/BIGBUS/static/css/main.47aae437.css",
+    "main.js": "/BIGBUS/static/js/main.3811e534.js",
+    "static/js/453.c5e91346.chunk.js": "/BIGBUS/static/js/453.c5e91346.chunk.js",
+    "static/media/19199529-girlinbbay.jpg": "/BIGBUS/static/media/19199529-girlinbbay.8548c3956d434cb249c8.jpg",
+    "static/media/9844304.jpg": "/BIGBUS/static/media/9844304.543a15c42d265d99af77.jpg",
+    "static/media/bus1.jpg": "/BIGBUS/static/media/bus1.47409b860f950d10eb0c.jpg",
+    "static/media/bootstrap-icons.woff?": "/BIGBUS/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/BIGBUS/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/BIGBUS/index.html",
+    "main.47aae437.css.map": "/BIGBUS/static/css/main.47aae437.css.map",
+    "main.3811e534.js.map": "/BIGBUS/static/js/main.3811e534.js.map",
+    "453.c5e91346.chunk.js.map": "/BIGBUS/static/js/453.c5e91346.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47aae437.css",
+    "static/js/main.3811e534.js"
+  ]
+}
