@@ -2,6 +2,7 @@
   "name": "bigbus",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://anil5453.github.io/BIGBUS",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
@@ -30,7 +31,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -57,17 +60,3 @@
     "tailwindcss": "^4.1.5"
   }
 }
-
-"homepage": "https://anil5453.github.io/BIGBUS"
-
-
-"scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
-
-
