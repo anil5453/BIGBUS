@@ -3,12 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "@mui/styles": "^6.4.11",
+    "@mui/x-data-grid": "^8.1.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.11.3",
+    "framer-motion": "^12.12.1",
+    "gh-pages": "^6.3.0",
+    "jquery": "^3.7.1",
+    "keen-slider": "^6.8.6",
+    "lucide-react": "^0.503.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-email-validator": "^1.0.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -35,5 +49,25 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "react-router-dom": "^7.4.0",
+    "tailwindcss": "^4.1.5"
   }
 }
+
+"homepage": "https://anil5453.github.io/BIGBUS"
+
+
+"scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
+
