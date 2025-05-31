@@ -32,7 +32,7 @@ const busServices = [
 const BusCard = ({ service }) => (
   <motion.div
     whileHover={{ scale: 1.055 }}
-    className="keen-slider__slide p-4 text-bg-warning"
+    className="keen-slider__slide p-4 "
   >
     <div className="rounded-5 border border-gray-200 p-5 shadow-sm border-3 hover-shadow hover-bg-red transition-all ">
       <div className="space-y-2">
@@ -87,7 +87,7 @@ function GovernmentBuses() {
         Government Buses
       </motion.h2>
 
-      <div ref={sliderRef} className="keen-slider">
+      <div ref={sliderRef} className="keen-slider ">
         {busServices.map((service, index) => (
           <BusCard key={index} service={service} />
         ))}

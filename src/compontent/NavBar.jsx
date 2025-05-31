@@ -1,6 +1,7 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import piv from "../pics/NavBarpic.jpg"
 
 function NavBar() {
   return (
@@ -30,7 +31,7 @@ function NavBar() {
           Reservation
         </Button>
       </Toolbar>
-      <img src="/pics/NavBarpic.jpg" alt="" />
+      <img src={piv} alt="" />
     </AppBar>
   );
 }

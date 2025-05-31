@@ -2,52 +2,56 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import GovernmentBuses from '../compontent/GovernmentBuses';
 
- // Add custom styles here if needed
+// ✅ Import images from the "../pics" folder
+import img1 from '../pics/13252.jpg';
+import img2 from '../pics/7827298.jpg';
+import img3 from '../pics/bus3.jpg';
+import img4 from '../pics/bus-shed.jpg';
 
 const Services = () => {
   const buses = [
     {
       title: 'RED BUSS',
-      img: './pics/13252.jpg',
+      img: img1,
       discount: '20% off',
       link: 'https://www.redbus.in/',
     },
     {
       title: 'GO BUS',
-      img: './pics/7827298.jpg',
+      img: img2,
     },
     {
       title: 'YATRA BUS',
-      img: './pics/13252.jpg',
+      img: img1,
     },
     {
       title: 'UBER BUS',
-      img: './pics/7827298.jpg',
+      img: img2,
     },
     {
       title: 'DELUXE BUSES',
-      img: './pics/bus3.jpg',
+      img: img3,
     },
     {
       title: 'AC BUSES',
-      img: './pics/7827298.jpg',
+      img: img2,
     },
     {
       title: 'TGRTC BUSES',
-      img: './pics/bus-shed.jpg',
+      img: img4,
     },
     {
       title: 'BUS 3',
-      img: './pics/bus3.jpg',
+      img: img3,
     },
   ];
 
   return (
-    <div className="container my-5">
-        <div className='d-flex gap-5 ms-auto'>
-        <GovernmentBuses/>
-        </div>
-      <h2 className="text-center mb-4">Our Bus Services</h2>
+    <div className="container my-5 ">
+      <div className="d-flex gap-5 ms-auto">
+        <GovernmentBuses />
+      </div>
+      <h2 className="text-center mb-4 text-danger">Our Bus Services</h2>
       <div className="row g-4">
         {buses.map((bus, index) => (
           <div className="col-md-6 col-lg-3" key={index}>
@@ -59,19 +63,14 @@ const Services = () => {
               ) : (
                 <img src={bus.img} className="card-img-top" alt={bus.title} />
               )}
-              <div className="card-body ">
+              <div className="card-body">
                 <h5 className="card-title">{bus.title}</h5>
-                <p className="card-text ">Prices start from $1200 - $2500.</p>
-               
-                {bus.link ? (
-                  <Link to="/Booking" className="btn btn-success w-100">
-                    BOOK TICKET
-                  </Link>
-                ) : (
+                <p className="card-text">Prices start from $1200 - $2500.</p>
+                
                   <Link to="/NavBar" className="btn btn-success w-100">
                     BOOK TICKET
                   </Link>
-                )}
+                
               </div>
             </div>
           </div>

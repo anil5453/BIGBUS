@@ -37,7 +37,7 @@ const Home = () => {
         transition={{ duration: 0.6 }}
       >
         <div
-          className="bg-dark bg-opacity-75 shadow-lg rounded-4 p-4 p-md-5 mx-auto"
+          className="bg-dark bg-opacity-25 shadow-lg rounded-4 p-4 p-md-5 mx-auto"
           style={{ maxWidth: "1000px" }}
         >
           <div className="text-center mb-4">
@@ -126,7 +126,7 @@ const Home = () => {
       <AnimatePresence>
         {(!searched || !result) && (
           <motion.div
-            className="container mt-5 text-center"
+            className="container mt-5 text-center bg-black bg-opacity-10"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}

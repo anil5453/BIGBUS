@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Timely from "../pics/people-at-bus.jpg"
+import summer from "../pics/OV6UCV0-summer.jpg"
+import safety from "../pics/8794567-blue.jpg"
 
 const about = () => {
   return (
@@ -11,10 +14,10 @@ const about = () => {
             <div className="carousel-inner rounded-5 overflow-hidden">
               <div className="carousel-item active">
                 <img
-                  src="./pics/people-at-bus.jpg"
+                  src={Timely}
                   className="d-block w-100 img-fluid"
                   style={{ height: "500px", objectFit: "cover" }}
-                  alt="Timely Buses"
+                  alt="Timely"
                 />
                 <div className="carousel-caption d-none d-md-block">
                   <h1 className="text-white">Timely Buses</h1>
@@ -23,7 +26,7 @@ const about = () => {
               </div>
               <div className="carousel-item">
                 <img
-                  src="./pics/OV6UCV0-summer.jpg"
+                  src={summer}
                   className="d-block w-100 img-fluid"
                   style={{ height: "500px" }}
                   alt="Summer Offers"
@@ -35,7 +38,7 @@ const about = () => {
               </div>
               <div className="carousel-item">
                 <img
-                  src="./pics/8794567-blue.jpg"
+                  src={safety}
                   className="d-block w-100 img-fluid"
                   style={{ height: "500px",  }}
                   alt="Safety"

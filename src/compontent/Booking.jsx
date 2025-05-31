@@ -1,4 +1,5 @@
 import React from 'react'
+import booking from "../pics/People waiting for bus at bus stop.jpg"
 
 const Booking = () => {
   return (
@@ -6,7 +7,7 @@ const Booking = () => {
       <div className="container">
         <div className="row">
             <div class="col-6">
-                <img src="./pics/People waiting for bus at bus stop.jpg" alt="" class="img-fluid " />
+                <img src={booking}alt="" class="img-fluid " />
                 
             </div>
             <div className="col-6">

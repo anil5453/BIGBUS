@@ -2,7 +2,7 @@ import * as React from "react";
 import Grid from "@mui/material/Grid";
 import { Box } from "@mui/material";
 import { makeStyles } from '@mui/styles';
-
+import wheel from "../pics/steeringWheel.jpg"
 import Seat from "./Seat";
 import { useReservations } from "./ReaservationContext";
 import { seatsObj } from "./GlobalConstants";
@@ -65,7 +65,7 @@ const BusLayout = ({ setSelectedSeat }) => {
       >
         <img
           className={classes.steeringIcon}
-          src="/pics/steeringWheel.jpg"
+          src={wheel}
         />
         <div className={classes.deckTitle}>Lower Deck</div>
         <div className={classes.line}></div>

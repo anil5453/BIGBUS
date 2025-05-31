@@ -6,6 +6,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Ncover from './Ncover';
 import { useAuth } from '../compontent/AuthContext.jsx'; 
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import logo from '../pics/bus.logo.jpg';
 
 const Nav = () => {
   const location = useLocation();
@@ -37,11 +38,11 @@ const Nav = () => {
         <div className="container-fluid bg-gradient bg-success bg-opacity-75 rounded-pill">
           <div className="d-flex">
             <img
-              src="./pics/320232-P9JJ40-82.jpg"
-              alt="Logo"
-              style={{ width: "80px", height: "80px" }}
-              className="rounded-5 ms-3"
-            />
+  src={logo}
+  alt="Logo"
+  style={{ width: "80px", height: "80px" }}
+  className="rounded-5 ms-3"
+/>
             <Link className="navbar-brand" to="/Nav">
               <h1><b>BIGBUS </b></h1>
             </Link>

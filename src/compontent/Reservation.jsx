@@ -22,13 +22,14 @@ function Reservation() {
   };
 
   return (
-    <>
+    < >
       <PopupForm
         open={selectedSeat != null}
         onClose={() => {
           setSelectedSeat(null);
         }}
         onSave={handleSubmit}
+        
       />
       <Box
         sx={{
@@ -49,7 +50,7 @@ function Reservation() {
       </Box>
       <BusLayout setSelectedSeat={setSelectedSeat} />
 
-<Link to="/NavBar"><button >Click here</button></Link>    
+<Link to="/Booking"><button className="ms-5 float-lg-end btn btn-warning p-2">Click here</button></Link>    
     </>
   );
 }
