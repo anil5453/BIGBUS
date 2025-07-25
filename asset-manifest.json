@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/BIGBUS/static/css/main.47aae437.css",
-    "main.js": "/BIGBUS/static/js/main.86fd959f.js",
+    "main.js": "/BIGBUS/static/js/main.840be639.js",
     "static/js/453.c5e91346.chunk.js": "/BIGBUS/static/js/453.c5e91346.chunk.js",
     "static/media/bus3.jpg": "/BIGBUS/static/media/bus3.43d37834b771b4ff5de0.jpg",
+    "static/media/bus2.jpg": "/BIGBUS/static/media/bus2.ab8ad502c8da4b58934d.jpg",
     "static/media/people-at-bus.jpg": "/BIGBUS/static/media/people-at-bus.120a1fb7268091a8b421.jpg",
     "static/media/19199529-girlinbbay.jpg": "/BIGBUS/static/media/19199529-girlinbbay.8548c3956d434cb249c8.jpg",
     "static/media/OV6UCV0-summer.jpg": "/BIGBUS/static/media/OV6UCV0-summer.28345437b8ee8f56d604.jpg",
@@ -20,11 +21,11 @@
     "static/media/NavBarpic.jpg": "/BIGBUS/static/media/NavBarpic.c0f4e05bb349a5b064e4.jpg",
     "index.html": "/BIGBUS/index.html",
     "main.47aae437.css.map": "/BIGBUS/static/css/main.47aae437.css.map",
-    "main.86fd959f.js.map": "/BIGBUS/static/js/main.86fd959f.js.map",
+    "main.840be639.js.map": "/BIGBUS/static/js/main.840be639.js.map",
     "453.c5e91346.chunk.js.map": "/BIGBUS/static/js/453.c5e91346.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47aae437.css",
-    "static/js/main.86fd959f.js"
+    "static/js/main.840be639.js"
   ]
 }
