@@ -17,6 +17,7 @@ import DashBoard from './compontent/DashBoard';
 import { ReservationProvider } from './compontent/ReaservationContext';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import BusBookingServices from './compontent/BusBookingServices';
+import BookingList from './compontent/BookingList';
 
 function App() {
   return (
@@ -42,6 +43,8 @@ function App() {
                 <Route path="/BusBookingReactApp" element={<DashBoard />} />
                 <Route path="/BusBookingReactApp/reservation" element={<Reservation />} />
                 <Route path="/BusBookingServices" element={<BusBookingServices />} />
+               <Route path="/BookingList" element={<BookingList />} />
+
 
                
               </Routes>

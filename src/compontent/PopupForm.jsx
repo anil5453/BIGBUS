@@ -15,12 +15,37 @@ function PopupForm({ open, onClose, onSave }) {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [emailId, setEmailId] = useState("");
-  const handleSave = () => {
-    onSave(firstName, lastName, emailId);
-    setFirstName("");
-    setLastName("");
-    setEmailId("");
-  };
+  const handleSave = async () => {
+  if (!validateInput()) return;
+
+  try {
+    const response = await fetch("http://localhost:5453/userdetails", {
+      method: 'POST',
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        firstName,
+        lastName,
+        emailId
+      })
+    });
+
+    const data = await response.json(); // ✅ Parse response body
+    console.log("✅ Response from server:", data);
+
+    if (response.ok) {
+      onSave(firstName, lastName, emailId);
+      setFirstName("");
+      setLastName("");
+      setEmailId("");
+    } else {
+      alert("❌ Server error: " + data.message);
+    }
+  } catch (error) {
+    console.error("❌ Fetch error:", error);
+    alert("❌ Could not connect to backend. Check if the server is running.");
+  }
+};
+
 
   const validateInput = () => {
     let isValid = true;
@@ -79,7 +104,8 @@ function PopupForm({ open, onClose, onSave }) {
         />
       </DialogContent>
       <DialogActions>
-        <Button disabled={!validateInput()} onClick={handleSave} className="btn btn-outline-danger">
+        <Button disabled={!validateInput()} onClick={handleSave} className="btn btn-outline-danger"
+        >
           Book
         </Button>
       </DialogActions>

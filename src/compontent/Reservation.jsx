@@ -34,7 +34,7 @@ function Reservation() {
       <Box
         sx={{
           width: "100%",
-          height: "32px",
+          height: "42px",
           display: "flex",
           margin: "16px auto",
           backgroundColor: "red",
@@ -50,7 +50,11 @@ function Reservation() {
       </Box>
       <BusLayout setSelectedSeat={setSelectedSeat} />
 
-<Link to="/Booking"><button className="ms-5 float-lg-end btn btn-warning p-2">Click here</button></Link>    
+<div className="d-flex justify-content-center align-items-center">
+  <Link to="/BookingList">
+    <button className="btn btn-warning w-100">Click here</button>
+  </Link>
+</div>
     </>
   );
 }

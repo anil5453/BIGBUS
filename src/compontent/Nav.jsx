@@ -19,7 +19,7 @@ const Nav = () => {
 
   // Simulate login on app load (for demo)
   useEffect(() => {
-    const loggedIn = localStorage.getItem("isLoggedIn") === "true";
+    const loggedIn = localStorage.getItem("isLoggedIn") === "false";
     
   }, []);
 
@@ -43,7 +43,7 @@ const Nav = () => {
   style={{ width: "80px", height: "80px" }}
   className="rounded-5 ms-3"
 />
-            <Link className="navbar-brand" to="/Nav">
+            <Link className="navbar-brand" to="/">
               <h1><b>BIGBUS </b></h1>
             </Link>
             <div className="text-white pt-4 ps-3" style={{ overflow: 'hidden' }}>
@@ -98,7 +98,7 @@ const Nav = () => {
 
                 {isLoggedIn && (
                   <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><Link className="dropdown-item" to="/Booking">Booking</Link></li>
+                    <li><Link className="dropdown-item" to="/BookingList">Booking</Link></li>
                     <li><Link className="dropdown-item" to="/Rout">Travel History</Link></li>
                     <li><hr className="dropdown-divider" /></li>
                     <li><Link className="dropdown-item" to="/Wallet">Wallet</Link></li>
@@ -139,8 +139,9 @@ const Nav = () => {
           </div>
         </div>
       </nav>
+   
 
-      {location.pathname === '/Nav' && <Ncover />}
+        {location.pathname === '/Ncover' && <Ncover />}
     </div>
   );
 };

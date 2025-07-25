@@ -1,12 +1,12 @@
 import React from 'react'
-
+import ncv from '../pics/bus2.jpg'
 
 const Ncover = () => {
   return (
     
      
     <div>
-    <img src="/pics/bus2.jpg" alt="" style={{height:"650px", width:"100%"}}  />
+    <img src={ncv} alt="" style={{height:"650px", width:"100%"}}  />
   </div>
     
   )
